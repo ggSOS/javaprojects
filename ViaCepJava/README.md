@@ -1,2 +1,2 @@
 # javaprojects
-projetos de ViaCep com REST
+projeto de ViaCep com REST
