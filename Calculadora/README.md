@@ -1,2 +1,2 @@
 # javaprojects
-projetos de Calculadora com SOAP
+projeto de Calculadora com SOAP
