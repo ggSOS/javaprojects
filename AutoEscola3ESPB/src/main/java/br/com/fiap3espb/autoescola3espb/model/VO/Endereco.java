@@ -1,4 +1,4 @@
-package br.com.fiap3espb.autoescola3espb.model;
+package br.com.fiap3espb.autoescola3espb.model.VO;
 
 public record Endereco(
     String logradouro,

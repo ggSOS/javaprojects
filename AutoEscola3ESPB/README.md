@@ -1,6 +1,13 @@
 # javaprojects
 - projeto de Back End de Auto-Escola com Spring BOOT
 
+# MySQL
+- Start MySql Service
+- MySQL Workbench
+- criar banco de dados
+    - Create Database auto_escola_3espb
+- conectar ao banco de dados
+
 # Dados para POSTMAN
 - {
     "nome": "Charles",
