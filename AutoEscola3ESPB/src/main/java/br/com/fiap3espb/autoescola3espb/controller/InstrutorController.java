@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.fiap3espb.autoescola3espb.model.Instrutor;
+import br.com.fiap3espb.autoescola3espb.model.CadastroInstrutor;
 
 
 
@@ -16,7 +16,7 @@ import br.com.fiap3espb.autoescola3espb.model.Instrutor;
 @RequestMapping("/instrutores")
 public class InstrutorController {
     @PostMapping
-    public Instrutor cadastrarInstrutor(@RequestBody Instrutor dados){
+    public CadastroInstrutor cadastrarInstrutor(@RequestBody CadastroInstrutor dados){
         System.out.println(dados);
         return dados;
     }

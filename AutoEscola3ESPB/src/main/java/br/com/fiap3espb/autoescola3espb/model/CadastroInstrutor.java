@@ -1,6 +1,6 @@
 package br.com.fiap3espb.autoescola3espb.model;
 
-public record Instrutor(
+public record CadastroInstrutor(
     String nome,
     String email,
     String cnh,
