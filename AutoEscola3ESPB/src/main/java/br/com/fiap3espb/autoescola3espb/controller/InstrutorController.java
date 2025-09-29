@@ -1,5 +1,6 @@
 package br.com.fiap3espb.autoescola3espb.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -8,17 +9,24 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.fiap3espb.autoescola3espb.model.DTO.Instrutor;
+import br.com.fiap3espb.autoescola3espb.DTO.InstrutorDTO;
+import br.com.fiap3espb.autoescola3espb.model.Instrutor;
+import br.com.fiap3espb.autoescola3espb.repository.InstrutorRepository;
+import jakarta.transaction.Transactional;
 
 
 
 @RestController
 @RequestMapping("/instrutores")
 public class InstrutorController {
+
+    @Autowired
+    private InstrutorRepository repository;
+
     @PostMapping
-    public Instrutor cadastrarInstrutor(@RequestBody Instrutor dados){
-        System.out.println(dados);
-        return dados;
+    @Transactional
+    public void cadastrarInstrutor(@RequestBody InstrutorDTO dados){
+        repository.save(new Instrutor(dados));
     }
 
     @GetMapping
