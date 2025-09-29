@@ -1,7 +1,8 @@
 package br.com.fiap3espb.autoescola3espb.model;
 
-import br.com.fiap3espb.autoescola3espb.DTO.InstrutorDTO;
-import br.com.fiap3espb.autoescola3espb.VO.EnderecoVO;
+import br.com.fiap3espb.autoescola3espb.dto.InstrutorDTO;
+import br.com.fiap3espb.autoescola3espb.enums.Especialidade;
+import br.com.fiap3espb.autoescola3espb.vo.EnderecoVO;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

@@ -1,6 +1,6 @@
-package br.com.fiap3espb.autoescola3espb.DTO;
+package br.com.fiap3espb.autoescola3espb.dto;
 
-public record Endereco(
+public record EnderecoDTO(
     String logradouro,
     String numero,
     String complemento,

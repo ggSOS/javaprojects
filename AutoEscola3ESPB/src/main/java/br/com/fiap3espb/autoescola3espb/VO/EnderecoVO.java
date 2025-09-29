@@ -1,6 +1,6 @@
-package br.com.fiap3espb.autoescola3espb.VO;
+package br.com.fiap3espb.autoescola3espb.vo;
 
-import br.com.fiap3espb.autoescola3espb.DTO.Endereco;
+import br.com.fiap3espb.autoescola3espb.dto.EnderecoDTO;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,7 +19,7 @@ public class EnderecoVO {
     private String uf;
     private String cep;
     
-    public EnderecoVO(Endereco dados) {
+    public EnderecoVO(EnderecoDTO dados) {
         this.logradouro = dados.logradouro();
         this.numero = dados.numero();
         this.complemento = dados.complemento();
