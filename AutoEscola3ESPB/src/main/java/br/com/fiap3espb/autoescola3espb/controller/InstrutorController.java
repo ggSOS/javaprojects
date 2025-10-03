@@ -13,6 +13,7 @@ import br.com.fiap3espb.autoescola3espb.dto.InstrutorDTO;
 import br.com.fiap3espb.autoescola3espb.model.Instrutor;
 import br.com.fiap3espb.autoescola3espb.repository.InstrutorRepository;
 import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 
 
 
@@ -25,7 +26,7 @@ public class InstrutorController {
 
     @PostMapping
     @Transactional
-    public void cadastrarInstrutor(@RequestBody InstrutorDTO dados){
+    public void cadastrarInstrutor(@RequestBody @Valid InstrutorDTO dados){
         repository.save(new Instrutor(dados));
     }
 
