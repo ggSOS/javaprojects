@@ -27,6 +27,7 @@ public class Instrutor {
     private String nome;
     private String email;
     private String cnh;
+    private String telefone;
 
     @Enumerated(EnumType.STRING)
     private Especialidade especialidade;
@@ -38,6 +39,7 @@ public class Instrutor {
         this.nome = dados.nome();
         this.email = dados.email();
         this.cnh = dados.cnh();
+        this.telefone = dados.telefone();
         this.especialidade = dados.especialidade();
         this.endereco = new EnderecoVO(dados.endereco());
     }

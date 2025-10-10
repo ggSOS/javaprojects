@@ -16,6 +16,9 @@ public record InstrutorDTO(
     @Email
     String email,
 
+    @NotBlank
+    String telefone,
+
     // "\\d{2}/\\{2}/\\d{4}" = campo numerico com 2 algarismos/campo numerico com 2 algarismos/campo numerico com 4 algarismos
     // "\\d{9,11}" = campo numerico entre 9 e 11 algarismos
     @NotBlank

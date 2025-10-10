@@ -24,3 +24,10 @@
         "cep": "03346000"
     }
 }
+
+# Endpoint
+- Ex
+    - https://localhost:8080/instrutores?size=5&page=0
+        - página 1(0) da lista de instrutores paginados de 5 em 5
+    - https://localhost:8080/instrutores?sort=nome&size=2&page=1
+        - página 2(1) da lista de instrutores paginados de 2 em 2 e ordenados por nome
