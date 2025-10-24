@@ -1,16 +1,11 @@
 package br.com.fiap3espb.autoescola3espb.controller;
 
+import br.com.fiap3espb.autoescola3espb.dto.DadosAtualizacaoInstrutor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import br.com.fiap3espb.autoescola3espb.dto.InstrutorDTO;
 import br.com.fiap3espb.autoescola3espb.dto.ListagemInstrutorDTO;
@@ -37,17 +32,20 @@ public class InstrutorController {
     //@PageableDefault seta o padrão(sem adicionar modificadores no enpoint) da busca do frontend
     public Page<ListagemInstrutorDTO> listarInstrutores(
             @PageableDefault(size = 10, sort = { "nome" }) Pageable paginacao) {
-        return repository.findAll(paginacao).map(ListagemInstrutorDTO::new);
+        return repository.findAllByAtivoTrue(paginacao).map(ListagemInstrutorDTO::new);
     }
 
     @PutMapping
-    public void atualizarInstrutores() {
-
+    @Transactional
+    public void atualizarInstrutores(@RequestBody @Valid DadosAtualizacaoInstrutor dados) {
+        Instrutor instrutor = repository.getReferenceById(dados.id());
+        instrutor.atualizarInformacoes(dados);
     }
 
-    @DeleteMapping
-    public void deletarInstrutores() {
-
+    @DeleteMapping("/{id}")
+    @Transactional
+    public void deletarInstrutores(@PathVariable Long id) {
+        Instrutor instrutor = repository.getReferenceById(id);
+        instrutor.excluir();
     }
-    // todo: completar
 }

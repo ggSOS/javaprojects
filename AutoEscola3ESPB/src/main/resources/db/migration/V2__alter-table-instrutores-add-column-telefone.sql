@@ -1,4 +1,5 @@
 Alter Table INSTRUTORES
-Add(
+Add
+(
     TELEFONE varchar(20) Not Null
-    );
+);
