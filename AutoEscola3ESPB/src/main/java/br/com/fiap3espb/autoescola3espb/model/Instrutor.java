@@ -28,16 +28,13 @@ public class Instrutor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private Boolean ativo;
     private String nome;
     private String email;
     private String cnh;
     private String telefone;
-
     @Enumerated(EnumType.STRING)
     private Especialidade especialidade;
-
     @Embedded
     private EnderecoVO endereco;
 
