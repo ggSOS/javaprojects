@@ -1,4 +1,4 @@
-package br.com.fiap3espb.autoescola3espb.controller;
+package br.com.fiap3espb.autoescola3espb.infra.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

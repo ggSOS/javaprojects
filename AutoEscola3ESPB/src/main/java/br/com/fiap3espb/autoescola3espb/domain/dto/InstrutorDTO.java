@@ -1,6 +1,6 @@
-package br.com.fiap3espb.autoescola3espb.dto;
+package br.com.fiap3espb.autoescola3espb.domain.dto;
 
-import br.com.fiap3espb.autoescola3espb.enums.Especialidade;
+import br.com.fiap3espb.autoescola3espb.domain.enums.Especialidade;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

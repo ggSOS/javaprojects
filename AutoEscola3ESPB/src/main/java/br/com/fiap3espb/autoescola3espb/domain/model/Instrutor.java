@@ -1,9 +1,9 @@
-package br.com.fiap3espb.autoescola3espb.model;
+package br.com.fiap3espb.autoescola3espb.domain.model;
 
-import br.com.fiap3espb.autoescola3espb.dto.DadosAtualizacaoInstrutor;
-import br.com.fiap3espb.autoescola3espb.dto.InstrutorDTO;
-import br.com.fiap3espb.autoescola3espb.enums.Especialidade;
-import br.com.fiap3espb.autoescola3espb.vo.EnderecoVO;
+import br.com.fiap3espb.autoescola3espb.domain.dto.DadosAtualizacaoInstrutor;
+import br.com.fiap3espb.autoescola3espb.domain.dto.InstrutorDTO;
+import br.com.fiap3espb.autoescola3espb.domain.enums.Especialidade;
+import br.com.fiap3espb.autoescola3espb.domain.vo.EnderecoVO;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

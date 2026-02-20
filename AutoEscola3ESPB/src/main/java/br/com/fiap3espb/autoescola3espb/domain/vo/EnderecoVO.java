@@ -1,6 +1,6 @@
-package br.com.fiap3espb.autoescola3espb.vo;
+package br.com.fiap3espb.autoescola3espb.domain.vo;
 
-import br.com.fiap3espb.autoescola3espb.dto.EnderecoDTO;
+import br.com.fiap3espb.autoescola3espb.domain.dto.EnderecoDTO;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

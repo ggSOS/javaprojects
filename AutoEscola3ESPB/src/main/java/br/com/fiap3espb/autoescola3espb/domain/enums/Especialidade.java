@@ -1,4 +1,4 @@
-package br.com.fiap3espb.autoescola3espb.enums;
+package br.com.fiap3espb.autoescola3espb.domain.enums;
 
 public enum Especialidade {
     MOTOS,

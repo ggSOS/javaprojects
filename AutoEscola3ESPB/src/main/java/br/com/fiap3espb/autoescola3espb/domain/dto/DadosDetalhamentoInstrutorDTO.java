@@ -1,8 +1,8 @@
-package br.com.fiap3espb.autoescola3espb.dto;
+package br.com.fiap3espb.autoescola3espb.domain.dto;
 
-import br.com.fiap3espb.autoescola3espb.enums.Especialidade;
-import br.com.fiap3espb.autoescola3espb.model.Instrutor;
-import br.com.fiap3espb.autoescola3espb.vo.EnderecoVO;
+import br.com.fiap3espb.autoescola3espb.domain.enums.Especialidade;
+import br.com.fiap3espb.autoescola3espb.domain.model.Instrutor;
+import br.com.fiap3espb.autoescola3espb.domain.vo.EnderecoVO;
 
 public record DadosDetalhamentoInstrutorDTO(
         Long id,

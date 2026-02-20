@@ -1,10 +1,10 @@
-package br.com.fiap3espb.autoescola3espb.repository;
+package br.com.fiap3espb.autoescola3espb.domain.repository;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.com.fiap3espb.autoescola3espb.model.Instrutor;
+import br.com.fiap3espb.autoescola3espb.domain.model.Instrutor;
 
 public interface InstrutorRepository extends JpaRepository<Instrutor, Long> {
 
