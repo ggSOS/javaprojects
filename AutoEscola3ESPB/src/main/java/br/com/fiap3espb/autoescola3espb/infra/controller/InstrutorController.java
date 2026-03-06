@@ -8,6 +8,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import br.com.fiap3espb.autoescola3espb.domain.dto.InstrutorDTO;
@@ -29,6 +30,7 @@ public class InstrutorController {
 
     @PostMapping
     @Transactional
+    // @PreAuthorize("hasAnyRole('ADMIN', 'USER')") se autorizacao pelo Controller estiver habilitada
     public ResponseEntity<DadosDetalhamentoInstrutorDTO> cadastrarInstrutor(
             @RequestBody @Valid InstrutorDTO dados,
             UriComponentsBuilder uriBuilder) {

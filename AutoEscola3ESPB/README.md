@@ -8,6 +8,8 @@
     - Drop Database auto_escola_3espb
     - Create Database auto_escola_3espb
 - conectar ao banco de dados
+- ROLE Básica
+    - INSERT INTO `auto_escola_3espb`.`usuarios` (`id`, `login`, `senha`, `PERFIL`) VALUES ('1', 'admin', '$2a$10$sP1tguiLvhNl8cZzXnzCcOipW6OJd0z7RhdYaccURCA/62Fq8wSCe', 'ADMIN');
 
 # Dados para POSTMAN
 - {

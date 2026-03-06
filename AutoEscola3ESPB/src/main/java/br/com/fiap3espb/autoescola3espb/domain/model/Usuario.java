@@ -1,5 +1,6 @@
 package br.com.fiap3espb.autoescola3espb.domain.model;
 
+import br.com.fiap3espb.autoescola3espb.domain.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -24,20 +25,21 @@ public class Usuario implements UserDetails {
     private Long id;
     private String login;
     private String senha;
+    private Role perfil;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(new SimpleGrantedAuthority("ROLE_USER"));
+        return List.of(new SimpleGrantedAuthority("ROLE_" + perfil));
     }
 
     @Override
     public String getPassword() {
-        return "senha";
+        return senha;
     }
 
     @Override
     public String getUsername() {
-        return "login";
+        return login;
     }
 
     @Override
