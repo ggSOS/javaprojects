@@ -1,7 +1,9 @@
 Alter Table INSTRUTORES
 Add
 (
-    ATIVO tinyint
+    ativo TinyInt
 );
 
-Update INSTRUTORES Set ATIVO = 1;
+Update INSTRUTORES
+Set
+    ativo = 1;

@@ -1,5 +1,5 @@
 Alter Table INSTRUTORES
 Add
 (
-    TELEFONE varchar(20) Not Null
+    telefone    VarChar(20)     Not Null
 );

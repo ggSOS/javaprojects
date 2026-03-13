@@ -1,7 +1,9 @@
 Alter Table USUARIOS
 Add
 (
-    PERFIL  VarChar(10)  not null
+    perfil  VarChar(10)  Not Null
 );
 
-Update USUARIOS Set PERFIL = "USER";
+Update USUARIOS
+Set
+    perfil = "USER";

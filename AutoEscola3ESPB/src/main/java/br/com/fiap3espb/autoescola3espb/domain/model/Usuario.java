@@ -25,6 +25,8 @@ public class Usuario implements UserDetails {
     private Long id;
     private String login;
     private String senha;
+
+    @Enumerated(EnumType.STRING)
     private Role perfil;
 
     @Override

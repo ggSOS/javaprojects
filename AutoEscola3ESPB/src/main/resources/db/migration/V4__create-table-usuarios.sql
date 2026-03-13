@@ -1,6 +1,6 @@
 Create Table usuarios(
-    id              bigint          not null    auto_increment,
-    login           varchar(100)    not null    unique,
-    senha           varchar(255)    not null,
+    id              BigInt          Not Null    Auto_increment,
+    login           VarChar(100)    Not Null    Unique,
+    senha           VarChar(255)    Not Null,
     primary key(id)
 );

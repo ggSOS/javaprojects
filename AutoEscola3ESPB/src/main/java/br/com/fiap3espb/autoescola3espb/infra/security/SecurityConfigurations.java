@@ -30,7 +30,7 @@ public class SecurityConfigurations {
                 .sessionManagement(sm -> sm
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/login")
+                        .requestMatchers("/login", "/health-check")
                             .permitAll()
                         .requestMatchers(HttpMethod.POST, "/instrutores")
                             .hasAnyAuthority("ADMIN", "OWNER")
